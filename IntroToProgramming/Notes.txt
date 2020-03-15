@@ -28,3 +28,17 @@ Written in text (scripts)
 
 WHERE TO DOWNLOAD THE PYCHARM IDE SOURCE FOR INSTALLATION
 jetbeans.com/pycharm/download 
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+TO DO: 
+
+1. Create header of your .py files 
+2. Put it into clipx to get it immediately into all files from now on 
+
+# Program: 
+# Author: Chavdar Georgiev
+# Last modified: 
+
