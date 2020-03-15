@@ -1,0 +1,30 @@
+Intro to Python 
+
+
+
+■ 3/15/2020 Sun, Mar 15, 2020 11:35:25 AM
+-----------------------------------------------------------------
+
+PRELOMINARY STEPS (TO DO) 
+
+1. PyCharm IDE downloaded and installed
+2. Directory structure created and liased with the GitHub 
+
+
+■ 3/15/2020 some other notes/TIPS regarding introduction video
+-----------------------------------------------------------------
+
+MAIN PY USAGE:
+Science 
+Web
+Linux (40% of new builds) 
+Best Beginner's choice because of smooth high-level syntax 
+Wide DEV community, huge libraries and many already done stuff
+
+WHAT IS PY:
+High-level scripting language
+Interpreted 
+Written in text (scripts)
+
+WHERE TO DOWNLOAD THE PYCHARM IDE SOURCE FOR INSTALLATION
+jetbeans.com/pycharm/download 
