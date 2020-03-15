@@ -1,0 +1,112 @@
+Intro to Python Exercises 
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+Write a program, which:
+Prints "Hello SoftUni" on the console
+
+# Program: 
+# Author: Chavdar Georgiev
+# Last modified: 
+
+print('Hello SoftUni')
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+Write a program, which:
+Calculates the area of the rectangle
+Sides of the rectangle are 5 and 10
+
+# Program: 
+# Author: Chavdar Georgiev
+# Last modified: 
+a = 5
+b = 10
+area = a * b
+# print('area = ', area) # this fails in test, remove 'area='
+print(area)
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+Write a program to print numbers from 1 to 10 (inclsuive).
+Output
+Each number should be on a new line.
+
+for i in range(10):
+    print(i + 1)
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+Write a program, which calculates and prints the value of the following expressions:
+
+5 + 3 * 2
+4 * 3 * 2
+12 / 3 * 2
+
+Output
+Print the result of each expression on a separate line
+
+11
+24
+8.0
+
+
+SOLUTION
+
+print(5 + 3 * 2)
+print(4 * 3 * 2)
+print(12 / 3 * 2)
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+Write a program, which prints a triangle of stars.
+You should print one asteriks symbol (*) for the first row, two \
+asteriks symbols for the second row and so on for five rows.
+
+Output
+*
+**
+***
+****
+*****
+
+SOLUTION
+
+n = 5   # Number of rows 
+
+for i in range(n+1):
+    for j in range(i):
+        print('*', end='')
+    print()
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,466 @@
+Expressions and Statements
+
+
+VARIABLES
+
+In programming, each variable stores a certain value of a particular type.
+
+For example, data types can be: number, letter, text (string), date, \
+color, image, list and others. Here are some examples of data types:
+
+int: 1, 2, 3, 4, 5, 20, …
+float: 0.5, 3.14, -1.5, …
+str (text and symbols): 'a', "Hello", "Python", '@', 'X', …
+bool (boolean): True, False
+You can also imagine that variables are containers for data or \
+named areas in the memory and the data that they are storing can \
+be read and changed at any time.
+
+Basically variables provide means for:
+
+Storing data
+Retrieving stored data
+Modifying stored data
+They are characterized by:
+
+name (identifier)
+type (of the information preserved)
+value (stored information)
+Each of the variables in Python has a name, a type and a value.
+
+Here is how we would declare a variable and assign it with a value at the same time:
+
+name = "Bob"
+employed = True
+age = 35
+If you think of the variables as boxes that hold information, this is how they would look like:
+
+Variables can be stored in the program's:
+
+Operational memory - in the execution stack
+Dynamic memory - in the heap
+
+
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+DATA TYPES
+
+In Python we can use data types to define variables as follows:
+
+int - integer number
+float - real number
+str - string and chars
+bool - boolean
+Once a variable is defined, it can change its value many times.
+
+Here is how we can declare variables of different types:
+
+a = 5
+text = "Some text"
+letter = 'A'
+f = 4.2
+In Python data types are dynamic.
+
+Unlike other programming languages such as C# and Java it can change its data type later.
+
+A single variable can be used to hold different data types
+
+x = 5        # x is Number
+x = "John"   # x is String
+x = True     # x is Boolean
+To set a string value to a variable you can use single or double quotes:
+
+first_name = "John" 
+last_name = 'Adams'
+But you cannot use both together:
+
+first_name = 'John" 
+# this will not work
+Data types set ranges of values with similar characteristics.
+
+The are characterized by:
+
+Name - E.g. bool, int, string, DateTime
+Size (memory usage) - Example: 4 bytes
+Default value - Example: 0
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+NAMING CONVENTIONS
+
+In computer programming, a naming convention is a set of rules for choosing the \
+name to be used for variables.
+
+In Python the convention for naming variables is "Snake-case".
+
+There are other naming conventions which are used in different languages such as \
+pascal case, camel case.
+
+Snake-case is another naming convention, which separates words with:
+
+one underscore character (_)
+no spaces
+each element's initial letter usually lowercased within the compound
+the first letter either upper or lowercase:
+users_count
+first_name
+Camel case combines words by:
+
+capitalizing all words following the first word
+removing the space:
+userLoginCount
+Pascal case combines words by:
+
+capitalizing each word along with the first one removing the space:
+UserLoginCount
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+STATEMENTS
+
+The actions that a program takes, are expressed as statements.
+
+Python supports several different kinds of statements and here are a few of them:
+
+Declaration statements - declare local variables and constants, which in Python isn't required
+Expression statements - evaluate expressions
+Selection statements - select one of a number of possible statements
+Iteration statements - execute repeatedly an embedded statement
+Jump statements - transfer control
+Common actions include:
+
+Initializing
+counter = 1
+
+Printing a value
+print(counter)
+
+Modifying a value
+counter+=1
+sum = a + b
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+CONSOLE (TERMINAL)
+
+Generally, the system console represents a text terminal, \
+which means that it accepts and visualizes just text without \
+any graphical elements like buttons, menus,etc.
+
+Printing and Formatting Text and Numbers
+Using print(…) and print(…, end=" ")
+Work with these methods is easy because they can print all the basic types (string, numeric and primitive types).
+
+Here are some examples of printing various types of data:
+
+Example 
+print("Hello World")
+print(5)
+print(3.14159265358979)
+
+Output 
+Hello World
+5
+3.14159265358979
+
+Process finished with exit code 0
+
+
+
+Enter input
+The difference between print(…) and print(…, end=" ") is that the print(…) method by default prints a new line after printing your expression, whereas
+print(…, end=" ") appends only space afterwards.
+
+In fact the method does not print a new line but simply puts a "command" for moving cursor to the position where the new line starts (this command consists of the character \r followed by \n).
+
+Here is an example, which illustrates the difference between print(…) and print(…, end=" "):
+
+
+Example 2:
+print("I love")
+print("this", end=" ")
+print("course!", end=" ")
+
+Output
+I love
+this course! 
+Process finished with exit code 0
+
+
+We notice that the output of this example is printed on two lines, even though the code is on three.
+
+This happens because on the first line of code we use print(…) which prints "I love" and then goes to a new line.
+
+In the next two lines of the code uses the print(…, end=" ") method, which prints without going on a new line and thus the words "this" and "course!" remain on the same line.
+
+Formatting
+In Python, when printing a text, numbers and other data on the console, we can join them by using templates {...} etc.
+
+In programming, these templates are called placeholders. This is a simple example:
+
+Example
+first_name = "John"
+last_name = "Doe"
+print(f"{first_name} {last_name}") # John Doe
+
+Output
+John Doe
+
+Process finished with exit code 0
+
+The placeholders {...} are replaced by the value of the variable, which name lies inside the parentheses.
+
+Floating-point numbers can be formatted to some digit after the decimal point.
+
+In the following example we want to limit the number to 2 decimal points.
+
+Example
+a = 5.123
+print(f"{a:.2f}") # 5.12
+
+Output
+5.12
+
+Process finished with exit code 0
+
+
+■ 3/15/2020
+-----------------------------------------------------------------
+
+READING USER INPUT
+
+To read a text (string) from the console, again, we have to initialize \
+a new variable and use the standard command for reading a text from the console:
+
+str = input()
+By default, the input(…) method returns a text result – a text line, read from the console.
+
+After you read a text from the console, additionally, you can parse the \
+text to an integer by int(…) or a floating-point number by float(…).
+If parsing to a number is not done, each number will simply be text, and we \
+cannot do arithmetic operations with it.
+
+Example: Home Town
+Let's write a program that asks the user for their home town and prints \
+the text "I am from {homeTown}!".
+
+home_town = input()
+print(f"I am from {home_town}!")
+
+In this case the {home_town} expression is replaced with the value of the variable home_town.
+
+If we enter "Sofia", the output will be as follows:
+
+---------------- code ----------------
+# Program:
+# Author: Chavdar Georgiev
+# Last modified:
+
+home_town = input('Please tell me where are you from? ')
+
+print("I am from", home_town)
+
+print(f"I am from {home_town}!")
+---------------- code ----------------
+
+OUTPUT 
+
+C:\Users\Chavdar\AppData\Local\Programs\Python\Python38-32\python.exe C:/Users/Chavdar/SoftUni/course/Python/IntroToPython_Exercise/input_text.py
+Please tell me where are you from? Burgass
+I am from Burgass
+I am from Burgass!
+
+Process finished with exit code 0
+
+## ATTN.: Compare 
+print("I am from", home_town)
+AND
+print(f"I am from {home_town}!")
+the second line containf formatted output. 
+
+I am from Sofia!
+
+READING INTEGERS
+
+In order to read an integer (not a float) number from the console, we have \
+to initialize a variable, declare the number type and use the standard \
+command for reading a text line from the system console input() and after \
+that convert the text line into an integer number using int(text):
+
+num = int(input())
+
+The above line of Python code reads an integer from the first line on the console.
+
+Try to write a wrong number, for example "hello".
+
+You will get an error message during runtime (exception). This is normal.
+
+Later on, we will find out how we can catch these kinds of errors and make \
+the user enter a number again.
+
+Example: Calculating a Square Area
+This code demonstrates how we can calculate the square area by the given length of the side:
+
+Here is how the program would work if we had a square with a side length equal to 3:
+
+
+----------------- code ----------------
+# Program: Calculate square area by length of the side, given by console
+# Author: Chavdar Georgiev
+# Last modified:
+
+a = int(input('a='))
+s = (a * a)
+
+print(f"Square area = {s}")
+----------------- code ----------------
+
+OUTPUT 
+
+C:\Users\Chavdar\AppData\Local\Programs\Python\Python38-32\python.exe C:/Users/Chavdar/SoftUni/course/Python/IntroToPython_Exercise/read_integer_input.py
+a=8
+Square area = 64
+
+Process finished with exit code 0
+
+---
+
+
+READING FLOATING-POINT NUMBERS
+
+To read a floating-point number (fractional number, non-integer) from \
+the console use the following command:
+
+The above Python code first reads a text line from the console, then converts \
+(parses) it to a floating-point number.
+
+Example: Converting Inches into Centimeters
+Let's write a program that reads a floating-point number in inches and converts \
+it to centimeters:
+
+Let's start the program and make sure that when a value in inches is entered, \
+we obtain a correct output in centimeters:
+
+
+Note that if you enter and invalid number, e.g. "asfd", the program will crash \
+with an error message (exception).
+
+We will learn how to handle exceptions in later courses.
+
+Importing Libraries (import)
+Sometimes we need to import external libraries.
+
+A library is a collection of functions and methods that allows you to perform actions without having to write any code.
+
+Examples
+
+Problem: Greeting
+Greeting
+
+ResetRun
+Description
+Write a program, which:
+
+Reads a user input: name, from the console
+
+Prints "Hello, {name}", where {name} is the user input
+
+Example
+Input
+Peter
+
+Output
+Hello, Peter
+
+Test results:
+
+- Test has passed
+- Test has failed
+- There was problem running the test
+80/100
+- Test result
+No tests ran
+Your top result:
+
+This is your top result so far
+
+0/100
+InputOutput
+CONSOLE
+1
+Enter input
+Solution: Greeting
+Greeting
+
+ResetRun
+Description
+Write a program, which:
+
+Reads a user input: name, from the console
+
+Prints "Hello, {name}", where {name} is the user input
+
+Example
+Input
+Peter
+
+Output
+Hello, Peter
+
+Test results:
+
+- Test has passed
+- Test has failed
+- There was problem running the test
+80/100
+- Test result
+No tests ran
+Your top result:
+
+This is your top result so far
+
+0/100
+InputOutput
+CONSOLE
+1
+Enter input
+Concatenating Text and Numbers
+Besides for summing up numbers, the operator + is also used for joining pieces of text (concatenation of two strings one after another).
+
+In programming, joining two pieces of text is called "concatenation".
+
+Here is how we can concatenate a text with a number by the + operator:
+
+Run
+CONSOLE
+1
+Enter input
+Examples: Concatenating Text and Numbers
+Here is another example of concatenating text and numbers:
+
+Run
+CONSOLE
+1
+Enter input
+Did you notice something strange? Maybe you expected the numbers a and b to be summed?
+
+Actually, the concatenation works from right to left and the result above is absolutely correct.
+
+If we want to sum the numbers, we have to use brackets, in order to change the order of execution of the operations:
+
+Run
+CONSOLE
+1
+Enter input
+
+
+
+
