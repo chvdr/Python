@@ -11,3 +11,5 @@ for i in range(n):
     for j in range(n):
         print(ch, end='')
     print()
+
+exit(0)
